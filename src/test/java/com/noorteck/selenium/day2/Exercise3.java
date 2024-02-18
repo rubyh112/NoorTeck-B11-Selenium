@@ -16,8 +16,9 @@ public class Exercise3 extends Hooks {
 		driver.get("https://demo.nopcommerce.com/");
 		Thread.sleep(1000);
 
-		WebElement registerLink = driver.findElement(By.cssSelector(
-				"body > div.master-wrapper-page > div.header > div.header-upper > div.header-links-wrapper > div.header-links > ul > li:nth-child(1) > a"));
+		//WebElement registerLink = driver.findElement(By.cssSelector(
+		//		"body > div.master-wrapper-page > div.header > div.header-upper > div.header-links-wrapper > div.header-links > ul > li:nth-child(1) > a"));
+		WebElement registerLink = driver.findElement(By.xpath("//a[contains(@class,'ico')]"));
 		registerLink.click();
 		Thread.sleep(1000);
 
